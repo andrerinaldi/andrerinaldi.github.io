@@ -1,7 +1,7 @@
 # Site settings
 title: Andrea Rinaldi
 description: 'Andrea Rinaldi - young and passionate Software Engineer'
-url: 'http://joshgerdes.com/jekyll-uno'
+url: 'https://andrerinaldi.github.io/andrearinaldi'
 baseurl: '/andrearinaldi'
 # google_analytics: 'UA-XXXXXX-X'
 disqus_shortname: 'rinaldiandrea'
