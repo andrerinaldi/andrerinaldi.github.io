@@ -1,0 +1,43 @@
+# Site settings
+title: Andrea Rinaldi
+description: 'Andrea Rinaldi - young and passionate Software Engineer'
+url: 'http://joshgerdes.com/jekyll-uno'
+baseurl: '/andrearinaldi'
+# google_analytics: 'UA-XXXXXX-X'
+disqus_shortname: 'rinaldiandrea'
+
+author:
+  name: 'Andrea Rinaldi'
+  email: andrea.rinaldi03@gmail.com
+  twitter_username: andrearinalds
+  facebook_username: Rin90
+  github_username:  andrerinaldi
+  linkedin_username:  andrearina
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
