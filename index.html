@@ -442,17 +442,10 @@
     @media print {
       @page { margin: 0 0; size: A4; }
       html { font-size: 11px; }
-      body { background: #fff; }
-      /* paint sidebar bg on every page via fixed pseudo */
-      body::before {
-        content: '';
-        position: fixed;
-        top: 0; left: 0;
-        width: 188px;
-        height: 297mm;
-        background: #f4f3f1;
-        border-right: 1px solid #c4c6cf;
-        z-index: -1;
+      body {
+        /* gradient fixed = repeats on every printed page */
+        background: linear-gradient(to right, #f4f3f1 187px, #c4c6cf 187px, #c4c6cf 188px, #ffffff 188px);
+        background-attachment: fixed;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
       }
